@@ -1,5 +1,5 @@
 # Arithmatic_Logic_Unit
-An arithmatic Logic Unit which can do 32 operation!
+An arithmatic Logic Unit which can do 32 operations!
 
 The provided Verilog code implements a synchronous Arithmetic Logic Unit (ALU) named `Ltalu`, designed to perform 32 distinct operations on two 8-bit inputs, `A` and `B`, based on a 5-bit `opcode`. The ALU operates on the positive edge of the clock (`clk`) and includes a reset signal (`reset`) to initialize outputs. It produces a 16-bit result (`result`) and updates three flags: `carry`, `zero`, and `overflow`. The operations are categorized into arithmetic, logical, shift/rotate, comparison, and special functions, with a default case for undefined opcodes.
 
