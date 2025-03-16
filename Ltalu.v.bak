@@ -1,0 +1,24 @@
+module alu_final(x,y,sel,out,out_8bit,carry,overflow,sign,zero);
+ input [7:0] x,y;
+ input [5:0] sel;
+ output reg [7:0] out_8bit;
+ output reg out;
+ output reg carry;
+ output reg overflow;
+ output reg sign;
+ output reg zero;
+ reg [8:0] temp;
+ 
+ parameter      add     = 5'b00000,
+           subtract     = 5'b00001,
+			  
+ 
+ always @(*) begin
+  carry =0;
+  overflow =0;
+  case (sel)
+     add: begin
+	           temp=x+y;
+				  {carry,out_8bit}=temp;
+				  overflow=
+				  
